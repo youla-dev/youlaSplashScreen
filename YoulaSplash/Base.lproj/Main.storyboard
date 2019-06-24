@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="V7D-95-rEM">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iWR-V4-cuy" customClass="SplashViewController" customModule="YoulaSplash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xxP-Rn-cqq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-bg" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-f0-mUM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-logo" translatesAutoresizingMaskIntoConstraints="NO" id="vXW-52-cJd">
+                                <rect key="frame" x="151.66666666666666" y="314" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="2wT-kf-M0Q"/>
+                                    <constraint firstAttribute="height" constant="72" id="XPi-5h-4Z2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MsT-Kc-vIo">
+                                <rect key="frame" x="63.666666666666657" y="652" width="247.99999999999997" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="WWo-GT-r1M"/>
+                                    <constraint firstAttribute="width" constant="248" id="zMK-8v-zi7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MsT-Kc-vIo" firstAttribute="centerX" secondItem="xxP-Rn-cqq" secondAttribute="centerX" id="A03-3y-M19"/>
+                            <constraint firstAttribute="bottom" secondItem="MsT-Kc-vIo" secondAttribute="bottom" constant="48" id="HIq-Uy-sFi"/>
+                            <constraint firstItem="3vZ-f0-mUM" firstAttribute="top" secondItem="xxP-Rn-cqq" secondAttribute="top" id="Hea-Zt-WBx"/>
+                            <constraint firstItem="vXW-52-cJd" firstAttribute="centerY" secondItem="xxP-Rn-cqq" secondAttribute="centerY" constant="-56" id="KjR-8f-1hO"/>
+                            <constraint firstAttribute="bottom" secondItem="3vZ-f0-mUM" secondAttribute="bottom" id="L38-cx-lAs"/>
+                            <constraint firstItem="3vZ-f0-mUM" firstAttribute="trailing" secondItem="xxP-Rn-cqq" secondAttribute="trailing" id="LFP-yP-IsZ"/>
+                            <constraint firstItem="3vZ-f0-mUM" firstAttribute="leading" secondItem="xxP-Rn-cqq" secondAttribute="leading" id="Uom-EY-woj"/>
+                            <constraint firstItem="vXW-52-cJd" firstAttribute="centerX" secondItem="xxP-Rn-cqq" secondAttribute="centerX" id="qoa-R4-uWS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9dy-nX-ghu"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="vXW-52-cJd" id="qLS-hO-beB"/>
+                        <outlet property="textImageView" destination="MsT-Kc-vIo" id="l5V-ET-NW5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W76-kP-nve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-830.43478260869574" y="26.785714285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone-X-screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="knd-zr-vAm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="knd-zr-vAm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H1g-bx-met"/>
+                            <constraint firstAttribute="bottom" secondItem="knd-zr-vAm" secondAttribute="bottom" id="O9Q-Ki-WHb"/>
+                            <constraint firstItem="knd-zr-vAm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="h1h-Db-znA"/>
+                            <constraint firstItem="knd-zr-vAm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="hAq-gS-zCF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.200000000000003" y="25.862068965517242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iphone-X-screenshot" width="375" height="812"/>
+        <image name="splash-bg" width="360" height="640"/>
+        <image name="splash-logo" width="88" height="88"/>
+    </resources>
+</document>
